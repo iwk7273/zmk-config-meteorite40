@@ -21,10 +21,17 @@
 
 / { 
     behaviors {
-        mouse_scroll: mouse_wheel {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
+        mouse_scroll_h: mouse_scroll_h {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>; // CW / CCW fixed
+            tap-ms = <25>;
+        };
+
+        mouse_scroll_v: mouse_scroll_v {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>; // CW / CCW fixed
             tap-ms = <25>;
         };
     };
@@ -95,8 +102,8 @@
             >;
 
             sensor-bindings =
-                <&mouse_scroll SCRL_UP SCRL_DOWN>, //ロータリーエンコーダー左：反時計回り/スクロールUp, 時計回り/スクロールDown
-                <&mouse_scroll SCRL_UP SCRL_DOWN>; //ロータリーエンコーダー右：反時計回り/スクロールUp, 時計回り/スクロールDown
+                <&mouse_scroll_v>, //ロータリーエンコーダー左：反時計回り/スクロールUp, 時計回り/スクロールDown
+                <&mouse_scroll_v; //ロータリーエンコーダー右：反時計回り/スクロールUp, 時計回り/スクロールDown
                 //<&inc_dec_kp LC(MINUS) LC(EQUAL)>, // RE0: ctrl + - / +,,,
                 //<&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
         };
@@ -111,8 +118,8 @@
             >;
 
             sensor-bindings =
-                <&mouse_scroll SCRL_LEFT SCRL_RIGHT>, //ロータリーエンコーダー左：反時計回り/スクロールRight, 時計回り/スクロールLeft
-                <&mouse_scroll SCRL_RIGHT SCRL_LEFT>; //ロータリーエンコーダー右：反時計回り/スクロールRight, 時計回り/スクロールLeft
+                <&mouse_scroll_h>, //ロータリーエンコーダー左：反時計回り/スクロールRight, 時計回り/スクロールLeft
+                <&mouse_scroll_h>; //ロータリーエンコーダー右：反時計回り/スクロールRight, 時計回り/スクロールLeft
                 //<&inc_dec_kp LC(MINUS) LC(EQUAL)>, // RE0: ctrl + - / +,,,
                 //<&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
         };
