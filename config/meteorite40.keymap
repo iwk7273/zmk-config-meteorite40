@@ -24,7 +24,7 @@
         mouse_scroll_h: mouse_scroll_h {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>; // CW / CCW fixed
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>; // CW / CCW fixed
             tap-ms = <25>;
         };
 
