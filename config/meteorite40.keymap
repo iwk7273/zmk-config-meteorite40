@@ -103,7 +103,7 @@
 
             sensor-bindings =
                 <&mouse_scroll_v>, //ロータリーエンコーダー左：反時計回り/スクロールUp, 時計回り/スクロールDown
-                <&mouse_scroll_v; //ロータリーエンコーダー右：反時計回り/スクロールUp, 時計回り/スクロールDown
+                <&mouse_scroll_v>; //ロータリーエンコーダー右：反時計回り/スクロールUp, 時計回り/スクロールDown
                 //<&inc_dec_kp LC(MINUS) LC(EQUAL)>, // RE0: ctrl + - / +,,,
                 //<&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
         };
