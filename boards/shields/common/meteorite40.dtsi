@@ -152,7 +152,7 @@
         invert-y = <INVERT_Y>;
     };
 
-#if IS_ENABLED(CONFIG_ZMK_CUSTOM_CONFIG)
+#if CONFIG_ZMK_CUSTOM_CONFIG
     scroll_layer_defaults: scroll_layer_defaults {
         compatible = "zmk,custom-scroll-layers";
         layers = <SCROLL_LAYER_1 SCROLL_LAYER_2>;
