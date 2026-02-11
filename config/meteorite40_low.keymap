@@ -19,6 +19,38 @@
 };
 
 / { 
+    behaviors {
+        os_ctrl_cmd: os_ctrl_cmd {
+            compatible = "zmk,behavior-os-switch";
+            display-name = "OS Ctrl/Cmd";
+            bindings = <&kp LCTRL>, <&kp LGUI>;
+        };
+
+        os_alt_opt: os_alt_opt {
+            compatible = "zmk,behavior-os-switch";
+            display-name = "OS Alt/Opt";
+            bindings = <&kp LALT>, <&kp LALT>;
+        };
+
+        os_alt_ctrl: os_alt_ctrl {
+            compatible = "zmk,behavior-os-switch";
+            display-name = "OS Alt/Ctrl";
+            bindings = <&kp LALT>, <&kp LCTRL>;
+        };
+
+        os_win_ctrl: os_win_ctrl {
+            compatible = "zmk,behavior-os-switch";
+            display-name = "OS Win/Ctrl";
+            bindings = <&kp LGUI>, <&kp LCTRL>;
+        };
+
+        os_win_opt: os_win_opt {
+            compatible = "zmk,behavior-os-switch";
+            display-name = "OS Win/Opt";
+            bindings = <&kp LGUI>, <&kp LALT>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
