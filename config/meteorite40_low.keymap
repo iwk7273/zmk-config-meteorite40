@@ -5,6 +5,7 @@
 
 #include <behaviors/custom_config.dtsi>
 #include <behaviors/meteorite_custom_key.dtsi>
+#include <behaviors/meteorite_key_or_custom.dtsi>
 #include <behaviors/meteorite_bt_os.dtsi>
 #include <behaviors/meteorite_mod_key.dtsi>
 #include <behaviors/meteorite_os_key.dtsi>
@@ -31,7 +32,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
-            bindings = <&mck>, <&kp>;
+            bindings = <&mck>, <&mck_or_kp>;
             display-name = "Mod-Tap (meteorite)";
         };
 
@@ -42,6 +43,10 @@
             position-bindings = <12 13>; /* D, F */
             position-binding-behaviors = <&kp LEFT>, <&kp RIGHT>;
         };
+    };
+
+    &mck_or_kp {
+        alt-cmd-tab = <&alt_cmd_tab>;
     };
 
     combos {
