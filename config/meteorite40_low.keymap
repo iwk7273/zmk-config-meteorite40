@@ -27,9 +27,9 @@
         mck_mt: mck_mt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
-            bindings = <&kp>, <&mck>;
+            bindings = <&mck>, <&kp>;
             display-name = "Mod-Tap (meteorite)";
         };
     };
