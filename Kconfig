@@ -1,0 +1,14 @@
+# Meteorite40 local Kconfig overrides
+
+if !ZMK_USB_LOGGING
+
+config BOARD_SERIAL_BACKEND_CDC_ACM
+	default n
+
+config CONSOLE
+	default n
+
+config UART_CONSOLE
+	default n
+
+endif # !ZMK_USB_LOGGING
