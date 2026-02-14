@@ -3,4 +3,10 @@ if SHIELD_METEORITE40
 config ZMK_KEYBOARD_NAME
     default "meteorite40"
 
+config CONSOLE
+    default n
+
+config UART_CONSOLE
+    default n
+
 endif
