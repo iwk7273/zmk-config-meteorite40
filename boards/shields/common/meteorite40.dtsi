@@ -87,6 +87,28 @@
         wakeup-source;
     };
 
+    encoder0: ec11_0 {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio1 0 (GPIO_ACTIVE_LOW   | GPIO_PULL_UP)>;   // RE0_A: P1.00
+        b-gpios = <&gpio0 16 (GPIO_ACTIVE_LOW   | GPIO_PULL_UP)>;  // RE0_B: P0.16
+        steps = <96>;
+        status = "okay";
+    };
+
+    encoder1: ec11_1 {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio0 10 (GPIO_ACTIVE_LOW   | GPIO_PULL_UP)>;  // RE1_A: P0.10 (NFC2)
+        b-gpios = <&gpio1 10 (GPIO_ACTIVE_LOW   | GPIO_PULL_UP)>;  // RE1_B: P1.10
+        steps = <96>;
+        status = "okay";
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder0 &encoder1>;
+        triggers-per-rotation = <24>;
+    };
+
     /*
     xy_transf: xy_transf {
         compatible = "zmk,input-processor-transform";
