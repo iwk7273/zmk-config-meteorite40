@@ -6,6 +6,10 @@
     transform = <&transform_low_default>;
 };
 
+&LOW_PROFILE_TYPE_B {
+    transform = <&transform_low_default>;
+};
+
 / {
     chosen {
         zmk,kscan = &meteorite40_scan;
