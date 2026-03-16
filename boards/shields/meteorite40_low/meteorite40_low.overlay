@@ -2,14 +2,14 @@
 #include "../common/meteorite40-usb.overlay"
 #include "meteorite40_low-layout.dtsi"
 
-&LOW_PROFILE_DEFAULT {
+&LOW_PROFILE_TYPE_A {
     transform = <&transform_low_default>;
 };
 
 / {
     chosen {
         zmk,kscan = &meteorite40_scan;
-        zmk,physical-layout = &LOW_PROFILE_DEFAULT;
+        zmk,physical-layout = &LOW_PROFILE_TYPE_A;
         //transform = <&default_transform>;
     };
 
