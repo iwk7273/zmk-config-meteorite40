@@ -71,21 +71,6 @@
             display-name = "Encoder Key Press";
         };
 
-        enc_msc_kp: encoder_mouse_scroll_key_press {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&kp>;
-            tap-ms = <25>;
-            display-name = "Encoder Mouse Scroll / Key Press";
-        };
-
-        enc_kp_msc: encoder_key_press_mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&msc>;
-            tap-ms = <25>;
-            display-name = "Encoder Key Press / Mouse Scroll";
-        };
     };
 
     combos {
@@ -154,8 +139,8 @@
             >;
 
             sensor-bindings =
-                <&enc_msc SCRL_RIGHT SCRL_LEFT>,
-                <&enc_msc SCRL_UP SCRL_DOWN>;
+                <&enc_kp C_VOL_DN C_VOL_UP>,
+                <&enc_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_1 {
@@ -168,8 +153,8 @@
             >;
 
             sensor-bindings =
-                <&enc_msc SCRL_UP SCRL_DOWN>,
-                <&enc_msc SCRL_RIGHT SCRL_LEFT>;
+                <&enc_kp C_VOL_DN C_VOL_UP>,
+                <&enc_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_2 {
@@ -182,7 +167,7 @@
             >;
 
             sensor-bindings =
-                <&enc_kp LC(MINUS) LC(EQUAL)>,
+                <&enc_kp C_VOL_DN C_VOL_UP>,
                 <&enc_kp C_VOL_DN C_VOL_UP>;
 
         };
@@ -197,7 +182,7 @@
             >;
 
             sensor-bindings =
-                <&enc_kp LC(MINUS) LC(EQUAL)>,
+                <&enc_kp C_VOL_DN C_VOL_UP>,
                 <&enc_kp C_VOL_DN C_VOL_UP>;
 
         };
@@ -211,7 +196,7 @@
 			>;
 
             sensor-bindings =
-                <&enc_kp LC(MINUS) LC(EQUAL)>,
+                <&enc_kp C_VOL_DN C_VOL_UP>,
                 <&enc_kp C_VOL_DN C_VOL_UP>;
         };
     };
