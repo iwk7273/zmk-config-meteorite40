@@ -70,6 +70,22 @@
             tap-ms = <25>;
             display-name = "Encoder Key Press";
         };
+
+        enc_msc_kp: encoder_mouse_scroll_key_press {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&kp>;
+            tap-ms = <25>;
+            display-name = "Encoder Mouse Scroll / Key Press";
+        };
+
+        enc_kp_msc: encoder_key_press_mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&msc>;
+            tap-ms = <25>;
+            display-name = "Encoder Key Press / Mouse Scroll";
+        };
     };
 
     combos {
