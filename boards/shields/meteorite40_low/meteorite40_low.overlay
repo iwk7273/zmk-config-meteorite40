@@ -26,8 +26,6 @@
             RC(2,0) RC(2,1) RC(2,3) RC(2,4) RC(2,5)                 RC(3,1) RC(3,2) RC(3,4) RC(3,5) RC(3,6)
             RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,5) RC(0,6) RC(1,0) RC(5,1) RC(5,2) RC(5,3) RC(5,4) RC(5,6)
                      RC(6,0) RC(6,1)    RC(6,2)    RC(2,6)  RC(3,0)     RC(6,3)    RC(6,4) RC(6,5)
-            /* Encoder pseudo positions, not wired. */
-            RC(0,0) RC(1,1) RC(2,2) RC(3,3)
         >;
     };
 };

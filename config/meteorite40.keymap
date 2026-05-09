@@ -7,8 +7,6 @@
 #include <behaviors/meteorite_bt_os.dtsi>
 #include <behaviors/meteorite_mod_key.dtsi>
 #include <behaviors/meteorite_os_key.dtsi>
-#include <behaviors/meteorite_encoder.dtsi>
-#include <behaviors/meteorite_mouse_scroll.dtsi>
 #include <dt-bindings/zmk/custom_config.h>
 #include <dt-bindings/zmk/meteorite_custom_keys.h>
 #include <dt-bindings/zmk/meteorite_bt_os.h>
@@ -55,6 +53,22 @@
             bindings = <&mck M_OS_ALT_CMD>, <&kp TAB>;
             position-bindings = <12 13>; /* D, F */
             position-binding-behaviors = <&kp LS(TAB)>, <&kp TAB>;
+        };
+
+        enc_msc: encoder_mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <25>;
+            display-name = "Encoder Mouse Scroll";
+        };
+
+        enc_kp: encoder_key_press {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            tap-ms = <25>;
+            display-name = "Encoder Key Press";
         };
     };
 
@@ -121,12 +135,11 @@
                 &mt LSHIFT A &kp S       &kp D        &kp F        &kp G                                 &kp H        &kp J       &kp K       &kp L  &kp MINUS
                 &kp Z        &kp X       &kp C        &kp V        &kp B        &mkp MB1     &mkp MB2    &kp N        &kp M       &kp COMMA   &kp DOT  &lt 4 SLASH
                                     &kp LWIN  &mt LCTRL TAB  &mt LSHIFT SPACE  &lt 1 SPACE  &lt 1 ENTER  &lt 2 ENTER  &lt 3 BSPC  &kp RALT
-                &mmsc SCRL_RIGHT &mmsc SCRL_LEFT &mmsc SCRL_UP &mmsc SCRL_DOWN
             >;
 
             sensor-bindings =
-                <&met_enc>,
-                <&met_enc>;
+                <&enc_msc SCRL_RIGHT SCRL_LEFT>,
+                <&enc_msc SCRL_UP SCRL_DOWN>;
         };
 
         layer_1 {
@@ -136,12 +149,11 @@
                 &kp CARET  &kp AMPS  &kp STAR  &kp BSLH  &kp PIPE                        &kp SEMI   &kp COLON  &kp SQT    &kp DQT    &kp EQUAL
                 &none      &none     &none     &none     &none      &mkp MB4  &mkp MB5   &kp GRAVE  &kp TILDE  &kp LBRC   &kp RBRC   &kp PLUS
                                      &trans     &trans    &trans    &trans    &trans     &trans    &kp DEL     &trans
-                &mmsc SCRL_UP &mmsc SCRL_DOWN &mmsc SCRL_RIGHT &mmsc SCRL_LEFT
             >;
 
             sensor-bindings =
-                <&met_enc>,
-                <&met_enc>;
+                <&enc_msc SCRL_UP SCRL_DOWN>,
+                <&enc_msc SCRL_RIGHT SCRL_LEFT>;
         };
 
         layer_2 {
@@ -151,12 +163,11 @@
                 &kp SLASH        &kp N4     &kp N5     &kp N6     &kp MINUS                       &none         &kp LEFT      &kp UP        &kp DOWN     &kp RIGHT
                 &kp N0           &kp N1     &kp N2     &kp N3     &kp DOT   &mkp MB4   &mkp MB5   &none         &kp LG(LEFT)  &kp LG(UP)    &kp LG(DOWN) &kp LG(RIGHT)
                                         &trans           &trans     &trans     &trans    &trans        &trans  &trans    &trans
-                &kp LC(MINUS) &kp LC(EQUAL) &kp C_VOL_DN &kp C_VOL_UP
             >;
 
             sensor-bindings =
-                <&met_enc>,
-                <&met_enc>;
+                <&enc_kp LC(MINUS) LC(EQUAL)>,
+                <&enc_kp C_VOL_DN C_VOL_UP>;
 
         };
 
@@ -167,12 +178,11 @@
                 &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none
                 &none   &none   &none   &none   &none   &none   &none   &none   &none   &none    &none  &none
                                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &kp LC(MINUS) &kp LC(EQUAL) &kp C_VOL_DN &kp C_VOL_UP
             >;
 
             sensor-bindings =
-                <&met_enc>,
-                <&met_enc>;
+                <&enc_kp LC(MINUS) LC(EQUAL)>,
+                <&enc_kp C_VOL_DN C_VOL_UP>;
 
         };
         layer_4 {
@@ -182,12 +192,11 @@
 				&ccfg C_SDIV_DN &ccfg C_SDIV_UP &ccfg C_SCRH_TOG &ccfg C_SCRV_TOG &ccfg C_SCRL_SCALE_TOG                &bt BT_CLR     &bt BT_CLR_ALL  &none         &none         &none
 				&ccfg C_SAVE    &ccfg C_RESET   &none           &none             &ccfg C_SCRL2_UP        &none  &none  &bootloader    &none         &none         &none         &none
 												                            &trans       &trans  &trans  &trans  &trans  &trans    &trans        &trans
-                &kp LC(MINUS) &kp LC(EQUAL) &kp C_VOL_DN &kp C_VOL_UP
 			>;
 
             sensor-bindings =
-                <&met_enc>,
-                <&met_enc>;
+                <&enc_kp LC(MINUS) LC(EQUAL)>,
+                <&enc_kp C_VOL_DN C_VOL_UP>;
         };
     };
 };
