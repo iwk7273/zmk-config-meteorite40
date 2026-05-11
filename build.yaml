@@ -20,7 +20,5 @@
 include:
   - board: xiao_ble//zmk
     shield: meteorite40
-    snippet: zmk-usb-logging
   - board: xiao_ble//zmk
     shield: meteorite40_low
-    snippet: zmk-usb-logging
