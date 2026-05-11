@@ -20,5 +20,7 @@
 include:
   - board: xiao_ble//zmk
     shield: meteorite40
+    snippet: studio-rpc-usb-uart zmk-usb-logging
   - board: xiao_ble//zmk
     shield: meteorite40_low
+    snippet: studio-rpc-usb-uart zmk-usb-logging
