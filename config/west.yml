@@ -15,5 +15,9 @@ manifest:
     - name: zmk-feature-meteorite-config
       remote: iwk7273
       revision: main
+    - name: prospector-zmk-module
+      remote: iwk7273
+      revision: main
+      path: modules/prospector-zmk-module
   self:
     path: config
