@@ -14,10 +14,10 @@ manifest:
       revision: main
     - name: zmk-feature-meteorite-config
       remote: iwk7273
-      revision: feat/meteorite-adv-v2
+      revision: feat/prospector-support
     - name: prospector-zmk-module
       remote: iwk7273
-      revision: feat/meteorite-adv-v2
+      revision: main
       path: modules/prospector-zmk-module
   self:
     path: config
