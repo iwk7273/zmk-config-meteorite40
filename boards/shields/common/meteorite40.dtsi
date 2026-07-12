@@ -207,8 +207,6 @@
     custom_config_defaults: custom_config_defaults {
         compatible = "zmk,custom-config-defaults";
         os-mode = <OS_MODE_DEFAULT>;
-        mod-tap-tapping-term-ms = <200>;
-        layer-tap-tapping-term-ms = <150>;
         idle-timeout-s = <120>;
         idle-sleep-timeout-s = <900>;
     };

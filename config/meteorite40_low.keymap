@@ -20,6 +20,7 @@
     tapping-term-ms = <200>;
     meteorite-tapping-term-source = "mod-tap";
     quick-tap-ms = <150>; // change 200 to 150
+    require-prior-idle-ms = <(-1)>;
 };
 
 &lt {
@@ -27,6 +28,7 @@
     tapping-term-ms = <150>; // change 200 to 150
     meteorite-tapping-term-source = "layer-tap";
     quick-tap-ms = <150>; // change 200 to 150
+    require-prior-idle-ms = <(-1)>;
 };
 
 / {
