@@ -1,0 +1,13 @@
+# ローカルビルド専用 manifest。CI は config/west.yml を使い、このファイルを参照しない。
+# 用途・手順は firmware/build-workspace/LOCAL_BUILD.md を参照。
+# zmk-west-commands は firmware/zmk-west-commands/ のローカル checkout が正本
+# (url は自己参照。west update してもリモートへ出ない。上流取り込みは git fetch origin を手動実行)。
+manifest:
+  projects:
+    - name: zmk-west-commands
+      url: file:///C:/Users/iwkno/Documents/keyboard/meteorite40_ZMK/firmware/zmk-west-commands
+      revision: main
+      west-commands: scripts/west-commands.yml
+  self:
+    path: config
+    import: west.yml
