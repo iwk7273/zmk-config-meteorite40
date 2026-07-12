@@ -18,12 +18,14 @@
 &mt { 
     flavor = "tap-preferred"; // change hold to tap
     tapping-term-ms = <200>;
+    meteorite-tapping-term-source = "mod-tap";
     quick-tap-ms = <150>; // change 200 to 150
 };
 
 &lt {
     flavor = "tap-preferred";
     tapping-term-ms = <150>; // change 200 to 150
+    meteorite-tapping-term-source = "layer-tap";
     quick-tap-ms = <150>; // change 200 to 150
 };
 
@@ -33,7 +35,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
+            meteorite-tapping-term-source = "mod-tap";
             bindings = <&mck>, <&kp>;
             display-name = "meteorite OS-Switch-mod-tap";
         };
@@ -42,7 +45,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
+            meteorite-tapping-term-source = "mod-tap";
             bindings = <&mck>, <&alt_cmd_tab>;
             display-name = "meteorite OS-Switch-mod-tap (smart toggle)";
         };
