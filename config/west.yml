@@ -7,13 +7,13 @@ manifest:
   projects:
     - name: zmk
       remote: iwk7273
-      revision: feat/persist-system-timing
+      revision: 9e0c5a8206f2bfafc53005aa898436bb96d41986
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: iwk7273
       revision: main
     - name: zmk-feature-meteorite-config
       remote: iwk7273
-      revision: feat/persist-system-timing
+      revision: 3a477d90bb117841df9b2bea2688339ebe866a51
   self:
     path: config
