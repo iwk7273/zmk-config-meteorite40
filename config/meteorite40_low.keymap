@@ -200,5 +200,50 @@
                 <&enc_kp C_VOL_DN C_VOL_UP>,
                 <&enc_kp C_VOL_DN C_VOL_UP>;
         };
+
+        layer_5 {
+            status = "reserved";
+            display-name = "CUSTOM 1";
+            bindings = <
+                &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+                &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+                &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                              &none  &none  &none  &none  &none  &none  &none  &none
+            >;
+
+            sensor-bindings =
+                <&enc_kp C_VOL_DN C_VOL_UP>,
+                <&enc_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        layer_6 {
+            status = "reserved";
+            display-name = "CUSTOM 2";
+            bindings = <
+                &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+                &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+                &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                              &none  &none  &none  &none  &none  &none  &none  &none
+            >;
+
+            sensor-bindings =
+                <&enc_kp C_VOL_DN C_VOL_UP>,
+                <&enc_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        layer_7 {
+            status = "reserved";
+            display-name = "CUSTOM 3";
+            bindings = <
+                &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+                &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+                &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                              &none  &none  &none  &none  &none  &none  &none  &none
+            >;
+
+            sensor-bindings =
+                <&enc_kp C_VOL_DN C_VOL_UP>,
+                <&enc_kp C_VOL_DN C_VOL_UP>;
+        };
     };
 };
