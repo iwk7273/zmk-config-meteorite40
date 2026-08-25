@@ -1,5 +1,18 @@
 # Changelog
 
+## [4.6.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.5.0...v4.6.0) (2026-08-25)
+
+
+### Features
+
+* **keymap:** add three reserved Studio layers ([28d3064](https://github.com/iwk7273/zmk-config-meteorite40/commit/28d3064bae826e368aa90469623016f13e230126))
+* **scroll:** enable negotiated high-resolution scrolling ([36fe7af](https://github.com/iwk7273/zmk-config-meteorite40/commit/36fe7af0148c3dd399aa260bc40b8309c2eec0bb))
+
+
+### Bug Fixes
+
+* **keymap:** rename reserved layers ([#28](https://github.com/iwk7273/zmk-config-meteorite40/issues/28)) ([826b8be](https://github.com/iwk7273/zmk-config-meteorite40/commit/826b8be333821b56009a497d0479fa1a00110ede))
+
 ## [4.5.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.4.0...v4.5.0) (2026-07-20)
 
 ### 新機能
