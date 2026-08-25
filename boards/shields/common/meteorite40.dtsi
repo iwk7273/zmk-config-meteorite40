@@ -177,9 +177,11 @@
      */
     ball_profile_defaults: ball_profile_defaults {
         compatible = "zmk,ball-profile-defaults";
-        /* レイヤ index 順: 0=BASE 1=SYMBOLS 2=NUM/ARROW 3=FUNCTION 4=SETTING。
+        /* レイヤ index 順: 0=BASE 1=SYMBOLS 2=NUM/ARROW 3=FUNCTION 4=SETTING
+         * 5=CUSTOM 1 6=CUSTOM 2 7=CUSTOM 3。
          * デフォルト: Layer 2 (NUM/ARROW) のみ SCROLL、他は OFF。 */
-        layer-profiles = <BALL_OFF BALL_OFF BALL_SCROLL BALL_OFF BALL_OFF>;
+        layer-profiles = <BALL_OFF BALL_OFF BALL_SCROLL BALL_OFF BALL_OFF
+                          BALL_OFF BALL_OFF BALL_OFF>;
         sensitivity = <BALL_SENS_NORMAL>;
     };
 
