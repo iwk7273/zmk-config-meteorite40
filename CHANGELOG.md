@@ -3,15 +3,14 @@
 ## [4.6.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.5.0...v4.6.0) (2026-08-25)
 
 
-### Features
+### 新機能
 
-* **keymap:** add three reserved Studio layers ([28d3064](https://github.com/iwk7273/zmk-config-meteorite40/commit/28d3064bae826e368aa90469623016f13e230126))
-* **scroll:** enable negotiated high-resolution scrolling ([36fe7af](https://github.com/iwk7273/zmk-config-meteorite40/commit/36fe7af0148c3dd399aa260bc40b8309c2eec0bb))
+* Meteorite Studioから必要に応じて追加できる予約レイヤーを3つ追加しました。名前はRESERVE 1〜3で、追加時の40キーはすべて未割り当てです。
 
+### 改善
 
-### Bug Fixes
-
-* **keymap:** rename reserved layers ([#28](https://github.com/iwk7273/zmk-config-meteorite40/issues/28)) ([826b8be](https://github.com/iwk7273/zmk-config-meteorite40/commit/826b8be333821b56009a497d0479fa1a00110ede))
+* Windowsなど対応ホストで、トラックボールを低速操作した際のスクロールを細かな単位で処理し、カクつきを軽減しました。
+* macOSなど高分解能スクロールを要求しない環境では、自動的に従来のスクロール処理を使用します。
 
 ## [4.5.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.4.0...v4.5.0) (2026-07-20)
 
