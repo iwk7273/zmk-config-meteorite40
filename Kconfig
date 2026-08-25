@@ -3,7 +3,7 @@
 # Managed by release-please. Do not edit the version by hand.
 # x-release-please-start-version
 config ZMK_METEORITE_FIRMWARE_BUILD_VERSION
-	default "4.5.0"
+	default "4.6.0"
 # x-release-please-end
 
 if !ZMK_USB_LOGGING

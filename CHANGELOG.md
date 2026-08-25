@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.6.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.5.0...v4.6.0) (2026-08-25)
+
+
+### 新機能
+
+* Meteorite Studioから必要に応じて追加できる予約レイヤーを3つ追加しました。名前はRESERVE 1〜3で、追加時の40キーはすべて未割り当てです。
+
+### 改善
+
+* Windowsなど対応ホストで、トラックボールを低速操作した際のスクロールを細かな単位で処理し、カクつきを軽減しました。
+* macOSなど高分解能スクロールを要求しない環境では、自動的に従来のスクロール処理を使用します。
+
 ## [4.5.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.4.0...v4.5.0) (2026-07-20)
 
 ### 新機能
