@@ -7,7 +7,7 @@ Meteorite40 / Meteorite40 Low の常設5レイヤーはそのまま維持し、Z
 - 接続直後・settings reset直後: 5 active layers + 3 available layers
 - Studioで3回追加後: 8 active layers + 0 available layers
 - 追加枠のstock binding: 40キーすべて `&none`
-- 追加枠の仮名称: `CUSTOM 1`、`CUSTOM 2`、`CUSTOM 3`
+- 追加枠の名称: `RESERVE 1`、`RESERVE 2`、`RESERVE 3`
 - 追加枠のBall Profile既定値: `BALL_OFF`
 
 ZMK Studio向けの追加容量は、通常レイヤーを最初から8層表示するのではなく、keymap childを `status = "reserved"` にするZMK標準方式で確保する。これにより、通常の起動状態は既存の5層を変えず、StudioのAdd layer操作で必要な分だけ追加できる。
@@ -42,9 +42,9 @@ ZMK Studio向けの追加容量は、通常レイヤーを最初から8層表示
 
 | Stable layer ID | Node | display-name | status | 物理キー | sensor-bindings |
 |---:|---|---|---|---|---|
-| 5 | `layer_5` | `CUSTOM 1` | `reserved` | 40個すべて `&none` | 既存と同じ左右encoder音量操作 |
-| 6 | `layer_6` | `CUSTOM 2` | `reserved` | 40個すべて `&none` | 既存と同じ左右encoder音量操作 |
-| 7 | `layer_7` | `CUSTOM 3` | `reserved` | 40個すべて `&none` | 既存と同じ左右encoder音量操作 |
+| 5 | `layer_5` | `RESERVE 1` | `reserved` | 40個すべて `&none` | 既存と同じ左右encoder音量操作 |
+| 6 | `layer_6` | `RESERVE 2` | `reserved` | 40個すべて `&none` | 既存と同じ左右encoder音量操作 |
+| 7 | `layer_7` | `RESERVE 3` | `reserved` | 40個すべて `&none` | 既存と同じ左右encoder音量操作 |
 
 `bindings` は現行レイアウトの10 + 10 + 12 + 8の並びを保つ。`&trans` は混ぜない。`&none` は下位レイヤーへのfall-throughを止めるため、空レイヤーをToggleで有効化すると解除キーも遮断し得る。この挙動は要件どおりとし、実機試験ではMomentary activationで安全に確認する。
 
@@ -111,8 +111,8 @@ module側は配列の不足分を `BALL_OFF` にするため機能上は5要素�
 
 1. settings reset後に5レイヤーだけ表示され、Add layerが有効である。
 2. firmware RPCの `availableLayers` が3である。
-3. Addを1回行うと `CUSTOM 1` がindex 5へ追加され、40キーがすべてNone表示になる。
-4. 3回のAddで `CUSTOM 1`〜`CUSTOM 3` が順に追加され、`availableLayers` が0になり、4回目を操作できない。
+3. Addを1回行うと `RESERVE 1` がindex 5へ追加され、40キーがすべてNone表示になる。
+4. 3回のAddで `RESERVE 1`〜`RESERVE 3` が順に追加され、`availableLayers` が0になり、4回目を操作できない。
 5. 新規レイヤーのBall ProfileがOffである。
 6. 新規レイヤーの左右encoderが計画どおり音量操作として表示・動作する。
 7. 1キーを編集してSaveし、再接続後も追加レイヤーと編集内容が残る。

@@ -209,7 +209,7 @@
 
         layer_5 {
             status = "reserved";
-            display-name = "CUSTOM 1";
+            display-name = "RESERVE 1";
             bindings = <
                 &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
                 &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
@@ -224,7 +224,7 @@
 
         layer_6 {
             status = "reserved";
-            display-name = "CUSTOM 2";
+            display-name = "RESERVE 2";
             bindings = <
                 &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
                 &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
@@ -239,7 +239,7 @@
 
         layer_7 {
             status = "reserved";
-            display-name = "CUSTOM 3";
+            display-name = "RESERVE 3";
             bindings = <
                 &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
                 &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
