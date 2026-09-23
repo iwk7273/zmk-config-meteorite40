@@ -1,0 +1,131 @@
+/*
+ * Optional compile-time seed for a vacant slot (no saved settings).
+ * Delete + Save writes a tombstone, so this text does not return until Reset.
+ *
+ * / {
+ *     user_macro_defaults {
+ *         um0_default: um0_default {
+ *             compatible = "zmk,user-macro-default";
+ *             slot = <0>;
+ *             macro-name = "Hello";
+ *             text = "hello";
+ *         };
+ *     };
+ * };
+ */
+
+/ {
+    behaviors {
+        um0: user_macro_0 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <0>;
+            display-name = "User Macro 1";
+        };
+
+        um1: user_macro_1 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <1>;
+            display-name = "User Macro 2";
+        };
+
+        um2: user_macro_2 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <2>;
+            display-name = "User Macro 3";
+        };
+
+        um3: user_macro_3 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <3>;
+            display-name = "User Macro 4";
+        };
+
+        um4: user_macro_4 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <4>;
+            display-name = "User Macro 5";
+        };
+
+        um5: user_macro_5 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <5>;
+            display-name = "User Macro 6";
+        };
+
+        um6: user_macro_6 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <6>;
+            display-name = "User Macro 7";
+        };
+
+        um7: user_macro_7 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <7>;
+            display-name = "User Macro 8";
+        };
+
+        um8: user_macro_8 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <8>;
+            display-name = "User Macro 9";
+        };
+
+        um9: user_macro_9 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <9>;
+            display-name = "User Macro 10";
+        };
+
+        um10: user_macro_10 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <10>;
+            display-name = "User Macro 11";
+        };
+
+        um11: user_macro_11 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <11>;
+            display-name = "User Macro 12";
+        };
+
+        um12: user_macro_12 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <12>;
+            display-name = "User Macro 13";
+        };
+
+        um13: user_macro_13 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <13>;
+            display-name = "User Macro 14";
+        };
+
+        um14: user_macro_14 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <14>;
+            display-name = "User Macro 15";
+        };
+
+        um15: user_macro_15 {
+            compatible = "zmk,behavior-user-macro";
+            #binding-cells = <0>;
+            slot = <15>;
+            display-name = "User Macro 16";
+        };
+    };
+};
