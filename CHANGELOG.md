@@ -3,9 +3,16 @@
 ## [4.7.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.6.0...v4.7.0) (2026-09-23)
 
 
-### Features
+### 新機能
 
-* add user macros and expand combo slots ([a3701ae](https://github.com/iwk7273/zmk-config-meteorite40/commit/a3701ae711fd2cbe33125cf281d4811d80e86216))
+* Meteorite Studioから最大16件のマクロを作成し、キー入力、押す／離す、待機、文字列を組み合わせてキーボード本体へ保存できるようになりました。
+* 1つのキーにWindows用とMac用のマクロを割り当て、現在のOS設定に応じて実行するマクロを切り替えられる「Macro Pair」を追加しました。
+* 登録できるコンボ数を16件から24件へ増やしました。
+* マクロ画面では、名前変更、プレビュー、ステップの並べ替え、削除をまとめて操作できます。使用容量とTap時間は詳細設定内にまとめ、意味を確認できる説明を追加しました。
+
+### 利用条件
+
+* マクロ編集とMacro Pairにはv4.7.0以降のfirmwareが必要です。以前のfirmwareへ接続した場合、対応していない機能は表示しません。
 
 ## [4.6.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.5.0...v4.6.0) (2026-08-25)
 
