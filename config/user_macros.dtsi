@@ -1,3 +1,19 @@
+/*
+ * Optional compile-time seed for a vacant slot (no saved settings).
+ * Delete + Save writes a tombstone, so this text does not return until Reset.
+ *
+ * / {
+ *     user_macro_defaults {
+ *         um0_default: um0_default {
+ *             compatible = "zmk,user-macro-default";
+ *             slot = <0>;
+ *             macro-name = "Hello";
+ *             text = "hello";
+ *         };
+ *     };
+ * };
+ */
+
 / {
     behaviors {
         um0: user_macro_0 {

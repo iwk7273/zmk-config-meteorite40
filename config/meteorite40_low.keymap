@@ -11,6 +11,7 @@
 #include <behaviors/meteorite_bt_os.dtsi>
 #include <behaviors/meteorite_mod_key.dtsi>
 #include <behaviors/meteorite_os_key.dtsi>
+#include <behaviors/meteorite_os_macro.dtsi>
 #include <behaviors/studio_bt_disc.dtsi>
 #include <dt-bindings/zmk/custom_config.h>
 #include <dt-bindings/zmk/meteorite_custom_keys.h>
