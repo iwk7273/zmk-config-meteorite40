@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.7.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.6.0...v4.7.0) (2026-09-23)
+
+
+### Features
+
+* add user macros and expand combo slots ([a3701ae](https://github.com/iwk7273/zmk-config-meteorite40/commit/a3701ae711fd2cbe33125cf281d4811d80e86216))
+
 ## [4.6.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.5.0...v4.6.0) (2026-08-25)
 
 
