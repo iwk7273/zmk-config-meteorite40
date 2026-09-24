@@ -3,9 +3,16 @@
 ## [4.8.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.7.0...v4.8.0) (2026-09-24)
 
 
-### Features
+### 新機能
 
-* enable Studio Bluetooth profile management ([fb679b0](https://github.com/iwk7273/zmk-config-meteorite40/commit/fb679b09c3010431a3ba289f0ae8958c11e45f48))
+* Meteorite Studio の Connections から Bluetooth の接続先を確認し、使用する接続先の切替、ペアリング解除、USB／Bluetooth の出力優先を変更できるようになりました。
+* 接続先ごとに Studio 内で識別するための「ホスト名」を付けられるようになりました。Bluetooth のペアリング画面に表示されるキーボード名も接続先ごとに変更でき、再起動後も保持されます。
+* 接続が切れる可能性のある操作では事前に確認し、再接続後に変更結果を確認できるようになりました。
+
+### 利用上の注意
+
+* キーボード名は UTF-8 で 16 バイトまでです。ペアリング済みの端末では、OS が以前の名前を表示し続ける場合があります。
+* Connections の新しい設定には v4.8.0 以降の firmware と対応する Meteorite Studio が必要です。以前の firmware では表示しません。
 
 ## [4.7.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.6.0...v4.7.0) (2026-09-23)
 
