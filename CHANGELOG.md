@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.8.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.7.0...v4.8.0) (2026-09-24)
+
+
+### Features
+
+* enable Studio Bluetooth profile management ([fb679b0](https://github.com/iwk7273/zmk-config-meteorite40/commit/fb679b09c3010431a3ba289f0ae8958c11e45f48))
+
 ## [4.7.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.6.0...v4.7.0) (2026-09-23)
 
 
