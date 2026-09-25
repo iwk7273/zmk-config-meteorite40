@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: iwk7273
-      revision: becdd178247af51706245968a5b87e1c55af75fe
+      revision: 9b6b9c7e656f83699b5127985de99934ebf68911
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: iwk7273
