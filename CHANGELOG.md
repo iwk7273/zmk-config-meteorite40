@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.9.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.8.0...v4.9.0) (2026-09-25)
+
+
+### Features
+
+* **firmware:** enable fast Bluetooth keymap loading ([f8bd58d](https://github.com/iwk7273/zmk-config-meteorite40/commit/f8bd58d10dcc530a50a901fdaae9a57fa2e6c343))
+
 ## [4.8.0](https://github.com/iwk7273/zmk-config-meteorite40/compare/v4.7.0...v4.8.0) (2026-09-24)
 
 
